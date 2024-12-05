@@ -1,3 +1,7 @@
+* {
+    font-family: 'roboto', sans-serif;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 4fr / 1fr 4fr;
@@ -14,10 +18,32 @@
 
 .header-top {
     display: flex;
+    padding: 0.5rem;
+    align-items: center;;
 }
 
 .header-top>form {
     flex-grow: 4;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.searchbar {
+    height: 50%;
+    width: 60%;
+    border-radius: 1rem;
+    border: 0;
+    background-color: rgb(220, 220, 220);
+}
+
+.searchbutton {
+    height: 50%;
+}
+
+.header-top>p {
+    font-weight: bold;
+    font-size: 10pt;
 }
 
 .header-bottom {
@@ -25,24 +51,38 @@
     justify-content: end;
 }
 
+.greeting>h4, .greeting>h6 {
+    margin: 0;
+}
+
 .button-container {
     margin-left: auto;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    align-items: center;
+}
+
+.button-container>button {
+    border-radius: 1rem;
+    background-color: rgb(64, 147, 235);
+    color: white;
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
 }
 
 .sidebar {
-    background-color: rgb(113, 182, 255);
+    color: white;
+    padding: 1rem;
+    background-color: rgb(64, 147, 235);
     grid-area: sidebar;
+    font-weight: bold;
 }
 
-.sidebar>h1, .nav-top>p, .nav-bottom>p {
-    font-family: sans-serif;
-}
-
-.nav-top>p, .nav-bottom>p {
-    font-weight:bold;
+.logo {
+    margin-top: 0;
+    font-size: 18pt;
 }
 
 .main {

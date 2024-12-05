@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="header-top">
                 <form>
-                    <button>Search</button>
-                    <input type="search">
+                    <button class="searchbutton"></button>
+                    <input class="searchbar" type="search">
                 </form>
                 <!--image profile pic goes here-->
                 <button>Notification</button>
                 <p>Greg Heffley</p>
             </div>
             <div class="header-bottom">
-                <!--image profile pic goes here-->
-                <h4>Greg Heffley</h2>
+                <div class="greeting">
+                    <!--image profile pic goes here-->
+                    <h6>Hey there,</h6>
+                    <h4>Greg Heffley (@gheffley)</h2>
+                </div>
                 <div class="button-container">
                     <button>New</button>
                     <button>Upload</button>
@@ -29,7 +35,7 @@
             </div>
         </div>
         <div class="sidebar">
-            <h1>Dashboard</h1>
+            <p class="logo">Dashboard</p>
             <div class="nav-top">
                 <p>Home</p>
                 <p>Profile</p>
