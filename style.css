@@ -10,6 +10,7 @@
 }
 
 .header {
+    padding: 0.5rem;
     background-color: white;
     grid-area: header;
     display: grid;
@@ -18,7 +19,6 @@
 
 .header-top {
     display: flex;
-    padding: 0.5rem;
     align-items: center;;
 }
 
@@ -49,6 +49,7 @@
 .header-bottom {
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 .greeting>h4, .greeting>h6 {
@@ -78,6 +79,11 @@
     background-color: rgb(64, 147, 235);
     grid-area: sidebar;
     font-weight: bold;
+}
+
+.sidebar>ul {
+    list-style: none;
+    padding: 0;
 }
 
 .logo {
@@ -124,6 +130,12 @@
 .cardoptions {
     display: flex;
     justify-content: end;
+    gap: 0.5rem;
+}
+
+.cardoptions>svg {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .announcements {
