@@ -23,11 +23,13 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
+    border-bottom: 0.4rem solid rgb(210, 210, 210);
 }
 
 .header-top {
     display: flex;
     align-items: center;;
+    gap: 1rem;
 }
 
 .header-top>form {
@@ -38,12 +40,21 @@ body {
     gap: 0.25rem;
 }
 
+.header-top>svg {
+    height: 1.5rem;
+    fill: grey;
+}
+
 .searchbar {
     height: 1.5rem;
     width: 60%;
     border-radius: 1rem;
     border: 0;
     background-color: rgb(220, 220, 220);
+}
+
+.header-top-img {
+    height: 2rem;
 }
 
 .header-top>p {
@@ -55,6 +66,11 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+.header-bottom>img {
+    height: 3rem;
+    margin-right: 1rem;
 }
 
 .greeting>h4, .greeting>h6 {
